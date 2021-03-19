@@ -1,0 +1,237 @@
+.reviews-features-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    display: table;
+    direction: rtl;
+}
+
+.reviews {
+    padding-top: 47px;
+    padding-right: 16px;
+    padding-left: 16px;
+    background-color: #ffffff;
+    direction: ltr;
+}
+
+.reviews__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 44px;
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reviews__title:before {
+    position: absolute;
+    top: 0;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 184px;
+    height: 4px;
+    background-color: $green;
+}
+
+.reviews__main {
+    padding-top: 80px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    margin-bottom: 35px;
+}
+
+.reviews__main-content {
+    position: relative;
+}
+
+.reviews__main-content:before {
+    position: absolute;
+    left: 0;
+    top: -15px;
+    content: '';
+    width: 40px;
+    height: 26px;
+}
+
+.reviews__main-photo {
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97px;
+    height: 97px;
+}
+
+.reviews__text {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.reviews__name {
+    font-weight: 700;
+    text-align: center;
+}
+
+.reviews__quotes path {
+    fill: #E7EBF0;
+}
+
+.reviews__quotes--left {
+    position: absolute;
+    top: -55px;
+}
+
+.reviews__quotes--right {
+    transform: rotate(180deg);
+    position: absolute;
+    top: -55px;
+    right: 0;
+}
+
+.reviews__others {
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 36px;
+}
+
+.reviews__others-item {
+    display: table;
+    direction: ltr;
+}
+
+.reviews__others-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.reviews__others-item:nth-child(odd) {
+    direction: ltr;
+}
+
+.reviews__others-item:nth-child(even) {
+    direction: rtl;
+}
+
+.reviews__others-photo {
+    display: table-cell;
+    width: 59px;
+    height: 59px;
+    direction: ltr;
+    vertical-align: top;
+    padding: 0;
+}
+
+.reviews__others-content {
+    display: table-cell;
+    direction: ltr;
+    vertical-align: top;
+    padding: 0;
+}
+
+.reviews__others-item:nth-child(odd) .reviews__others-content {
+    padding-left: 15px;
+}
+
+.reviews__others-item:nth-child(even) .reviews__others-content {
+    padding-right: 15px;
+}
+
+.reviews__others-item .reviews__name {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .reviews {
+        width: 50%;
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1140px) {
+    .reviews {
+        padding-left: 30px;
+        padding-right: 63px;
+        background-color: #f5f5f5;
+    }
+
+    .reviews__main {
+        padding-top: 0;
+        box-shadow: none;
+        text-shadow: none;
+        background-color: #f5f5f5;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews__main-content {
+        display: table;
+        direction: ltr;
+    }
+
+    .reviews__title {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .reviews__main-photo {
+        position: static;
+        display: table-cell;
+        vertical-align: top;
+        width: 187px;
+        height: 187px;
+        transform: none;
+    }
+
+    .reviews__content {
+        display: table-cell;
+        vertical-align: top;
+        padding-left: 71px;
+    }
+
+    .reviews__quotes path {
+        fill: $green;
+    }
+
+    .reviews__quotes--left {
+        top: 0;
+    }
+
+    .reviews__quotes--right {
+        top: auto;
+        right: -40px;
+        bottom: 0;
+    }
+
+    .reviews__others {
+        display: table;
+        direction: rtl;
+    }
+
+    .reviews__others-item {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .reviews__others-item:nth-child(odd) {
+        padding-left: 15px;
+    }
+
+    .reviews__others-photo {
+        width: 97px;
+        height: 97px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .reviews {
+        padding-left: 130px;
+    }
+}

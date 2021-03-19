@@ -1,0 +1,56 @@
+.slider__item-icon:hover path,
+.slider__item-icon:hover rect,
+.slider__item-icon:hover circle {
+  stroke: $green;
+}
+
+.slider__item-icon {
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 72px;
+}
+
+.slider__item-text {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  margin-bottom: 85px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 8px;
+  height: 8px;
+  background: #e7ebf0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #a6abbd;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  top: auto;
+  bottom: -42px;
+}
+
+.bx-wrapper .bx-controls-direction a.bx-prev {
+  left: calc(50% - 90px);
+  background: url("../img/arrow_left.png") no-repeat 12px 6px;
+  background-size: 11px 19px;
+}
+
+.bx-wrapper .bx-controls-direction a.bx-next {
+  right: calc(50% - 90px);
+  background: url("../img/arrow_right.png") no-repeat 8px 6px;
+  background-size: 11px 19px;
+}
+
+@media (min-width: 1140px) {
+  .slider {
+    display: none;
+  }
+}
